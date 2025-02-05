@@ -4,6 +4,9 @@
 /build
 /public
 
+# mongo data directory
+/mongo
+
 #package files
 package-lock.json
 
