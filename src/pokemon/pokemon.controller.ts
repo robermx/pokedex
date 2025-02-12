@@ -16,6 +16,7 @@ export class PokemonController {
   constructor(private readonly pokemonService: PokemonService) {}
 
   @Post()
+  // @HttpCode(HttpStatus.CREATED) // this decorator sets the status code to 201
   create(@Body() createPokemonDto: CreatePokemonDto) {
     return this.pokemonService.create(createPokemonDto);
   }
